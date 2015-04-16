@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napkee export</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/colorpicker.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="css/jquery.orgchart.css">
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	
+	
+	<style type="text/css">
+	body{
+		background-color: #F4DEC8;
+		float:center;
+		}
+	
+	#napkeeCanvas {
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	.napkeeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	.napkeeRelativeComponent {
+		position:absolute;
+		white-space: nowrap;
+	}
+	
+	
+#nap1container{
+	left:887px;
+	top:73px;
+	z-index:1;
+}
+#nap1{
+	height:585px;
+}
+	
+#nap2{
+	width: 100%;
+	top:20px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	height:95px;
+	z-index:2;
+	background-color:#FFFFFF;
+	border-bottom: 4px solid #7A3D00;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+	
+#nap3{
+	left:881px;
+	top:131px;
+	width:2px;
+	height:490px;
+	z-index:3;
+	background-color:#7A3D00;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+	
+#nap4{
+	bottom:-150px;
+	width:100%;
+	height:45px;
+	z-index:4;
+	background-color:#FFFFFF;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	border:1px solid #000;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+	
+#nap5{
+	left:918px;
+	top:151px;
+	width:272px;
+	height:180px;
+	z-index:5;
+}
+	
+#nap6{
+	float: center;
+	right: 50px;
+	top:25px;
+	height:43px;
+	z-index:6;
+	font-size: 40px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	color:#000000;
+}
+	
+#nap7{
+	right: 180px;
+	top:59px;
+	height:23px;
+	z-index:7;
+	font-size: 20px;
+	font-style:italic;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:center;
+	color:#000000;
+}
+	
+#nap8{
+	left:881px;
+	top:434px;
+	width:330px;
+	height:2px;
+	z-index:8;
+	background-color:#7A3D00;
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+	
+#nap9{
+	left: 990px;
+	top:370px;
+	width:278.3px;
+	height:21px;
+	z-index:9;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap10{
+	left:898px;
+	top:460px;
+	width:126.50000000000001px;
+	height:22px;
+	z-index:10;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#emailTxT{
+	left:981px;
+	top:498px;
+	width:171px;
+	z-index:11;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#passswordTxT{
+	left:981px;
+	top:535px;
+	width:172px;
+	z-index:12;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap13{
+	left:938px;
+	top:501px;
+	width:38.5px;
+	height:21px;
+	z-index:13;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#nap14{
+	left:913px;
+	top:538px;
+	width:64.9px;
+	height:21px;
+	z-index:14;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+}
+	
+#loginBtn{
+	left:1091px;
+	top:595px;
+	z-index:15;
+}
+
+#loginBtn.napkee {
+	width:61px;
+	height:20px;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+	
+#containernap16{
+	left:1052px;
+	top:562px;
+	width:100px;
+	height:21px;
+	z-index:16;
+	font-size: 12px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+	
+#nap17{
+	left:972px;
+	top:602px;
+	width:110px;
+	height:19px;
+	z-index:17;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+}
+	
+#nap21{
+	left:16px;
+	top:97px;
+	width:854px;
+	height:27px;
+	z-index:18;
+	font-color: 
+	font-size: 16px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+}
+#nap21 li {
+	width:187px;
+	height:27px;
+	line-height:27px;
+}
+#nap21 li a{
+	text-decoration:none;
+}
+	
+#nap22{
+	left:65px;
+	top:199px;
+	width:120px;
+	height:79px;
+	z-index:19;
+	border:0px solid;
+}
+
+#nap22table{
+	left:25px;
+	top:239px;
+	width:120px;
+	height:79px;
+	z-index:20;
+	display:none;
+}
+
+#nap22label{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap23{
+	left:205px;
+	top:199px;
+	width:77px;
+	height:79px;
+	z-index:20;
+	border:0px solid;
+}
+
+#nap23table{
+	left:110px;
+	top:239px;
+	width:77px;
+	height:79px;
+	z-index:21;
+	display:none;
+}
+
+#nap23label{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap24{
+	left:65px;
+	top:342px;
+	width:162px;
+	height:79px;
+	z-index:21;
+	border:0px solid;
+}
+
+#nap24table{
+	left:25px;
+	top:328px;
+	width:162px;
+	height:79px;
+	z-index:22;
+	display:none;
+}
+
+#nap24label{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap25{
+	left:398px;
+	top:480px;
+	width:197px;
+	height:128px;
+	z-index:22;
+	border:0px solid;
+}
+
+#nap25table{
+	left:368px;
+	top:444px;
+	width:197px;
+	height:128px;
+	z-index:23;
+	display:none;
+}
+
+#nap25label{
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+	
+#nap26{
+	left:362px;
+	top:219px;
+	width:443px;
+	height:186px;
+	z-index:23;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+	white-space: normal;
+}
+	
+#nap27{
+	left:67px;
+	top:495px;
+	width:329px;
+	height:100px;
+	z-index:24;
+	font-size: 14px;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color:#000000;
+	white-space: normal;
+}
+	
+	</style>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/jquery.migration.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.swfobject.1-0.5.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/bootstrap-colorpicker.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery.orgchart.min.js"></script>
+    <script src="js/jquery.treeview.min.js"></script>
+    <script src="js/jquery.tagcloud.min.js"></script>
+	
+  </head>
+  <body>
+  
+	
+
+	
+		<div id="nap2" class="napkeeComponent napkeeCanvas">
+		<span id="nap6" class="napkeeRelativeComponent napkeeTitle">
+			Encarino Country and Golf Club</span>
+			
+		<span id="nap7" class="napkeeRelativeComponent napkeeSubTitle">
+			the place where everyone belongs...</span>
+			</div>
+	
+<div id="nap3" class="napkeeComponent napkeeVrule"></div>
+	
+<div id="nap4" class="napkeeComponent napkeeCanvas"></div>
+	
+<iframe id="nap5" src="http://www.napkee.com/components/NapkeeHostedMaps/?loc=Vienna, Austria" class="napkeeComponent napkeeMap"></iframe>
+	
+<div id="nap8" class="napkeeComponent napkeeHrule"></div>
+	
+<span id="nap9" class="napkeeComponent napkeeLabel ">[Address]</span>
+	
+<span id="nap10" class="napkeeComponent napkeeLabel ">Membership Login</span>
+	
+<input id="emailTxT" type="text" value="Email Address" class="napkeeComponent napkeeTextinput" />
+	
+<input id="passswordTxT" type="text" value="Password" class="napkeeComponent napkeeTextinput" />
+	
+<span id="nap13" class="napkeeComponent napkeeLabel ">Email:</span>
+	
+<span id="nap14" class="napkeeComponent napkeeLabel ">Password:</span>
+	
+<button id="loginBtn" type="button" class="napkeeComponent napkeeButton btn">Login</button>
+	
+<span id="containernap16" class="napkeeComponent napkeeCheckbox">
+	<label for="nap16" class="checkbox">
+	<input id="nap16" type="checkbox" />
+	Remember Me</label>
+</span>
+	
+<a id="nap17" href="#" class="napkeeComponent napkeeLink">Be a member now!</a>
+	
+<div id="nap21" class="btn-group napkeeComponent napkeeButtonbar">
+<a class="btn active" href="#" id="nap21i0">Home</a><a class="btn" href="#" id="nap21i1">Gallery</a><a class="btn" href="#" id="nap21i2">Membership</a><a class="btn" href="#" id="nap21i3">Contact Us</a>
+</div>
+	
+<img id="nap22" src="js/holder.js/127x129" class="napkeeComponent napkeeImage" />
+<table border="0" id="nap22table" class="napkeeComponent napkeeImageTable" >
+	<tr>
+		<td align="center" valign="middle">
+			<span id="nap22label" class="napkeeImageLabel"></span>
+		</td>
+	</tr>
+</table>
+
+	
+<img id="nap23" src="js/holder.js/127x129" class="napkeeComponent napkeeImage" />
+<table border="0" id="nap23table" class="napkeeComponent napkeeImageTable" >
+	<tr>
+		<td align="center" valign="middle">
+			<span id="nap23label" class="napkeeImageLabel"></span>
+		</td>
+	</tr>
+</table>
+
+	
+<img id="nap24" src="js/holder.js/267x129" class="napkeeComponent napkeeImage" />
+<table border="0" id="nap24table" class="napkeeComponent napkeeImageTable" >
+	<tr>
+		<td align="center" valign="middle">
+			<span id="nap24label" class="napkeeImageLabel"></span>
+		</td>
+	</tr>
+</table>
+
+	
+<img id="nap25" src="js/holder.js/435x243" class="napkeeComponent napkeeImage" />
+<table border="0" id="nap25table" class="napkeeComponent napkeeImageTable" >
+	<tr>
+		<td align="center" valign="middle">
+			<span id="nap25label" class="napkeeImageLabel"></span>
+		</td>
+	</tr>
+</table>
+
+	
+<div id="nap26" class="napkeeComponent napkeeParagraph" cellspacing="0" cellpadding="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare<br/></div>
+	
+<div id="nap27" class="napkeeComponent napkeeParagraph" cellspacing="0" cellpadding="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam.<br/></div>
+	
+	
+    <script type="text/javascript" charset="utf-8">
+	    function showMockup(url,params){
+			var finalUrl = url + "?";
+			if (params!=null){
+				jQuery.each(params, function(par, field){
+					finalUrl += par + "=" + $("#"+field).val() + "&";
+				});
+			}
+			location.href = finalUrl;
+		}
+		$(document).ready(function(){
+			$(".accordion").each(function(){
+				var _acc = $(this);
+				_acc.find(".accordion-inner").height(_acc.height() - (_acc.find(".accordion-inner").length * 36));
+			});
+			$(document).on("click", function(e){
+				$("[data-date]").datepicker('show');
+			});
+		
+			
+	
+$("#nap2").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap4").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+	
+$("#nap6").click(function(event){
+	showMockup('EncarinoCGHome.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap7").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap9").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap10").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#emailTxT").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#passswordTxT").click(function(event){
+	event.stopPropagation();
+	event.preventDefault();
+});
+	
+$("#nap13").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap14").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#loginBtn").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#containernap16").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap17").click(function(event){
+	event.preventDefault();
+	showMockup('MembershipEncarinoCGHome.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+
+$("#nap21").click(function(event){
+});
+
+$("#nap21i0").click(function(event){
+	showMockup('EncarinoCGHome.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap21i1").click(function(event){
+	showMockup('GalleryEncarinoCGHome.html');
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+
+$("#nap21i2").click(function(event){
+});
+
+$("#nap21i3").click(function(event){
+});
+
+$("#nap21i4").click(function(event){
+});
+
+	
+$("#nap22").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap23").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap24").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap25").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap26").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+$("#nap27").click(function(event){
+	
+	event.stopPropagation();
+	event.preventDefault();
+
+});
+	
+		});
+	</script>
+  </body>
+</html>
